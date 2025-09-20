@@ -37,18 +37,25 @@
       transition: opacity 1.5s ease;
     }
 
-    .text {
-      position: absolute;
-      bottom: 15%;
-      width: 100%;
-      text-align: center;
-      color: white;
-      font-size: 2.5rem;
-      font-weight: bold;
-      opacity: 0;
-      z-index: 4;
-      transition: opacity 1.5s ease;
-    }
+    ..text {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(100px); /* 오른쪽에서 시작 */
+  transition: all 1.2s ease;
+  z-index: 4;
+}
+
+.text.show {
+  opacity: 1;
+  transform: translateX(0); /* 제자리로 슬라이드 */
+}
+
   </style>
 </head>
 <body>
@@ -79,9 +86,11 @@
     }, 1500);
 
     // Step 3: 텍스트 나타나기
-    setTimeout(() => {
-      text.style.opacity = 1;
-    }, 2500);
+setTimeout(() => {
+  text.classList.add('show');
+}, 2500); 
+
+    
   });
 </script>
 
