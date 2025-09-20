@@ -80,11 +80,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img class="img_01" src="/card/img/img2.png;w=1280"/>
         </div>
     </div>
+    
+    <div id="lottie-animation-container"></div>
+
     <div id="opening-v2-text" class="opening_v2_text"></div>
 </div>
         
     </div>
-  
+  <script>
+    // Lottie 애니메이션 초기화
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-animation-container'), // 애니메이션을 표시할 div
+        renderer: 'svg',  // 'svg' 형식을 사용하여 고품질 애니메이션
+        loop: true,  // 애니메이션 반복 설정
+        autoplay: true,  // 애니메이션 자동 재생
+        path: '/src/bodymove/v2.json'  // Lottie JSON 파일 경로 (자신의 파일 경로로 바꿔주세요)
+    });
+</script>
 <script type="text/javascript" src="/card/skin/js/common_skin.js"></script>
 <link href="/card/skin/wedding_day/skin.css" rel="stylesheet">
 <link href="/card/skin/css/style.css" rel="stylesheet">
