@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
   <title>결혼합니다</title>
+  <meta charset="UTF-8" />
+  
+  <meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
   
   <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-4D1RLZ2MXV&amp;cx=c&amp;gtm=4e59a1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WF727LPL"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -79,7 +85,8 @@
 
   </style>
 </head>
-<body>
+  
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 
 <div id="splash">
   <div class="overlay-div"></div>
@@ -90,8 +97,905 @@
 
   <div id="invite_wrap">
   <div id="animContainer">
-    <div class="invite_inner" id="wedding">
-    </div></div></div>
+
+<div class="invite_inner" id="wedding">
+      <!-- 샘플용 -->
+            <!-- 워터마크 -->
+    <link rel="stylesheet" href="/card/skin/css/watermark.css">
+              
+      <!-- 메인 -->
+      <div class="main anchor_0">
+          <link rel="stylesheet" href="/card/skin/css/attend_top.css">
+
+<div class="at_wrap" style="display:none;">
+  <div class="at_back card"></div>
+  <div class="attend_top card">
+  <p class="close_p"><i class="xi-close at_close"></i></p>
+    <p class="tit">참석 여부 체크</p>
+    <div class="gr_br_wrap">
+      <p data-name="groom_name">신랑성함</p>
+      <i class="xi-heart"></i>
+      <p data-name="bride_name">신부성함</p>
+    </div>
+    <div class="check_point">
+      <p>
+        <span><i class="xi-calendar-check"></i></span>
+        <span class="editor_date">
+                    2025년 09월 09일 화요일        </span>
+        <span class="editor_night">PM</span>
+        <span class="editor_time">01</span>시
+        <span class="editor_min">00</span>분
+      </p>
+      <p>
+        <span><i class="xi-maker"></i></span>
+        <span data-name="card_hall">웨딩홀</span>
+      </p>
+
+
+    </div>
+    <p class="txt">특별한 날 귀한 발걸음을 참석 여부를<br>통해 전달해 주세요.</p>
+    <p class="check_attend">참석여부 체크하기</p>
+  </div>
+</div>
+
+
+<script>
+$(function(){
+  $('.check_attend').click(function(){
+    $('.attend_black').show();
+    $('.attend_pop_wrap').show();
+  });
+
+  $('.at_close').click(function(){
+    $('.at_back').hide();
+    $('.at_wrap').hide();
+  });
+
+  $('.attend_close').click(function(){
+    $('.at_back').hide();
+    $('.at_wrap').hide();
+  });
+});
+
+</script>
+                    <style media="screen">
+.scroll_wrap{position: fixed;  height: 40vh; width: 420px; left: 50%; transform: translateX(-50%);background:linear-gradient(0deg,#4d4d4d 0%, rgb(108 108 108 / 50%) 82%, rgba(255,255,255,0) 100%); z-index: 9; bottom: 0px;display: flex;justify-content: center;}
+.scroll_wrap .scroll_tit{color: #fff !important;}
+.scroll_wrap .inner_wr{margin: 0px auto;position: absolute;bottom: 80px;scale:1.1}
+.scroll_wrap .nemo_wrap{ width: 23px; height: 36px; position: relative;margin-bottom: 10px;border-radius: 4px; border:1px solid #fff;margin: 10px auto;}
+.scroll_wrap .nemo_wrap .circle_wrap{background-color: #fff;width: 7px;height: 7px;top: 0;border-radius: 50%;right: 0;position: absolute;transform: translateX(-100%); animation: ani_2 1.5s infinite}
+@keyframes ani_2 {
+  0%{top: 100%}
+  100%{top: 0%;}
+}
+.scroll_wrap.editor {position: absolute; bottom: -150px;}
+/* .scroll_wrap.card{position: fixed;  height: 100vh; width: 420px; left: 50%; transform: translateX(-50%);} */
+</style>
+  <div class="scroll_wrap card" style="display: none; opacity: 0; transition: all 1s ease 0s;">
+    <div class="inner_wr">
+    <div class="nemo_wrap">
+      <div class="circle_wrap"></div>
+    </div>
+    <p class="scroll_tit">스크롤 해주세요.</p>
+    </div>
+  </div>
+<script>
+$(function() {
+    $('.scroll_wrap').delay(4700).fadeOut('slow');
+});
+  $(window).on("scroll", function (event){
+  if (event.originalEvent.deltaY = 0) {
+    $('.scroll_wrap').css({"opacity":"1","transition":"1s"});
+  }
+  else {
+    $('.scroll_wrap').css({"opacity":"0","transition":"1s"});
+    setTimeout(function() {
+      $('.scroll_wrap').css("display", "none");
+    }, 1000);
+  }
+});
+$(window).on("wheel", function (event){
+if (event.originalEvent.deltaY = 0) {
+  $('.scroll_wrap').css({"opacity":"1","transition":"1s"});
+}
+else {
+  $('.scroll_wrap').css({"opacity":"0","transition":"1s"});
+  setTimeout(function() {
+    $('.scroll_wrap').css("display", "none");
+  }, 1000);
+}
+});
+
+
+</script>
+                                    <div class="card_bgm" style="display:block;">
+                <img src="/card/skin/img/play.svg" alt="bgm">
+              </div>
+                                    <audio id="skin_bgm" controls="" loop="" autoplay="" style="display:none;"><source src="/card/bgm/bgm.mp3" type="audio/mp3"></audio>
+                  <div class="main_img_wrap offset_0 offset">
+
+                      <video id="moving_video11" autoplay="autoplay" loop="loop" muted="muted" playsinline="" style="opacity: 1; transition: all 1s ease 0s; mix-blend-mode: screen; position: absolute; left: 0px; top: 0%; width: 100%; display: block;">
+              <source id="moving_video" src="/card/movie/snow2.mp4">
+            </video>
+          
+                      <img src="/card/skin/d_img/main2.png" alt="" id="skin_main_img" oncontextmenu="return false" style="-webkit-touch-callout:none">
+                    <div class="gradient"></div>
+        </div>
+        <div class="main_txt">
+          <p><span data-name="groom_name">신랑성함</span> <font>그리고</font> <span data-name="bride_name">신부성함</span></p>
+        </div>
+        <div class="bottom_txt">
+          <p>
+            <span class="editor_date">
+                            2025년 09월 09일 화요일            </span>
+            <span class="editor_night">PM</span>
+            <span class="editor_time">01</span>시
+            <span class="editor_min">00</span>분
+          </p>
+          <p data-name="card_hall">웨딩홀                      </p>
+        </div>
+
+      </div>
+
+      <div class="all_wrap">
+                <div class="greeting_wrap anchor_0 wrap_padding">
+                      <div class="offset_1 offset">
+  <div class="greeting_inner inner_padding" style="opacity: 1; margin-top: 0px;">
+    <img src="/card/skin/wedding_day/img/leaf.svg" alt="">
+    <span>초대합니다</span>
+        <p data-name="greeting_message" class="greeting_msg"></p>
+  </div>
+</div>
+                  </div>
+                <div class="call_wrap anchor_1 wrap_padding">
+                      <div class="offset_4 offset">
+<div class="call_inner inner_padding" style="opacity: 1; margin-top: 0px;">
+  <!-- 신랑 -->
+  <div class="call_box">
+   <span class="g_deceased_f em_ch ch_deceased" style="display:none">
+            <img src="/card/skin/img/go.svg" alt="">
+        </span>
+   <span data-name="groom_p_name"></span>
+   <span class="gr_call_dot" style="display:none"></span>
+   <span class="g_deceased_m em_ch ch_deceased" style="display:none">
+            <img src="/card/skin/img/go.svg" alt="">
+        </span>
+   <span data-name="groom_m_name"></span>
+   <span class="mini_txt gr_mini_txt" style="display: none; width: 44px;"><font data-name="groom_p_ship"></font></span>
+   <span data-name="groom_name">신랑성함</span>
+
+   <div class="gr_call call_sec gr_phone" style="display:none">
+     <i class="xi-ellipsis-h"></i>
+     <a class="mobile" href="tel:"><img src="/card/skin/fall_in_love/img/call.svg" alt=""></a>
+     <a class="sms" href="sms:"><img src="/card/skin/fall_in_love/img/sms.svg" alt=""></a>
+   </div>
+
+  </div>
+
+  <!-- 신부 -->
+  <div class="call_box">
+    <span class="b_deceased_f em_ch ch_deceased" style="display:none">
+              <img src="/card/skin/img/go.svg" alt="">
+          </span>
+    <span data-name="bride_p_name"></span>
+    <span class="br_call_dot" style="display:none"></span>
+    <span class="b_deceased_m em_ch ch_deceased" style="display:none">
+              <img src="/card/skin/img/go.svg" alt="">
+          </span>
+    <span data-name="bride_m_name"></span>
+    <span class="mini_txt br_mini_txt" style="display: none; width: 44px;"><font data-name="bride_p_ship"></font></span>
+    <span data-name="bride_name">신부성함</span>
+
+    <div class="br_call call_sec br_phone" style="display:none">
+      <i class="xi-ellipsis-h"></i>
+      <a class="mobile" href="tel:"><img src="/card/skin/fall_in_love/img/call.svg" alt=""></a>
+      <a class="sms" href="sms:"><img src="/card/skin/fall_in_love/img/sms.svg" alt=""></a>
+    </div>
+
+  </div>
+  <div class="call_box_btn call_p_btn">
+    <p class="parents theme_1_back">혼주에게 연락하기</p>
+  </div>
+
+  <div class="call_black black_back"></div>
+  <div class="call_pop_down pop_front">
+    <p class="theme_1_back">
+      <span>혼주에게 연락하기</span>
+      <i class="xi-close-thin call_close"></i>
+    </p>
+      <div class="g_parents" style="display:none">
+        <span class="tit sans_serif">신랑측 혼주</span>
+        <div class="pop_box gr_p" style="display:none">
+          <p>
+            <span class="g_deceased_f em_ch ch_deceased" style="display:none">
+                              <img src="/card/skin/img/go.svg" alt="">
+                          </span>
+            <span data-name="groom_p_name" class="sans_serif"></span>
+          </p>
+            <a class="gr_call gr_p_phone mobile" href="tel:" style="display:none">
+              <img src="/card/skin/fall_in_love/img/call.svg" alt="">
+            </a>
+            <a class="gr_call gr_p_phone sms" href="sms:" style="display:none">
+              <img src="/card/skin/fall_in_love/img/sms.svg" alt="">
+            </a>
+        </div>
+        <div class="pop_box gr_m" style="display:none">
+          <p>
+            <span class="g_deceased_m em_ch ch_deceased" style="display:none">
+                              <img src="/card/skin/img/go.svg" alt="">
+                          </span>
+            <span data-name="groom_m_name" class="sans_serif"></span>
+          </p>
+            <a class="gr_call gr_m_phone mobile" href="tel:" style="display:none">
+              <img src="/card/skin/fall_in_love/img/call.svg" alt="">
+            </a>
+            <a class="gr_call gr_m_phone sms" href="sms:" style="display:none">
+              <img src="/card/skin/fall_in_love/img/sms.svg" alt="">
+            </a>
+        </div>
+      </div>
+
+
+    <div class="b_parents" style="display:none">
+      <span class="tit sans_serif">신부측 혼주</span>
+      <div class="pop_box br_p" style="display:none">
+        <p>
+          <span class="b_deceased_f em_ch ch_deceased" style="display:none">
+                          <img src="/card/skin/img/go.svg" alt="">
+                      </span>
+          <span data-name="bride_p_name" class="sans_serif"></span>
+        </p>
+          <a class="br_call br_p_phone mobile" href="tel:" style="display:none">
+            <img src="/card/skin/fall_in_love/img/call.svg" alt="">
+          </a>
+          <a class="br_call br_p_phone sms" href="sms:" style="display:none">
+            <img src="/card/skin/fall_in_love/img/sms.svg" alt="">
+          </a>
+      </div>
+      <div class="pop_box br_m" style="display:none">
+        <p>
+          <span class="b_deceased_m em_ch ch_deceased" style="display:none">
+                          <img src="/card/skin/img/go.svg" alt="">
+                      </span>
+          <span data-name="bride_m_name" class="sans_serif"></span>
+        </p>
+          <a class="br_call br_m_phone mobile" href="tel:" style="display:none">
+            <img src="/card/skin/fall_in_love/img/call.svg" alt="">
+          </a>
+          <a class="br_call br_m_phone sms" href="sms:" style="display:none">
+            <img src="/card/skin/fall_in_love/img/sms.svg" alt="">
+          </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+                  </div>
+                <div class="calendar_wrap anchor_2 wrap_padding">
+                      <div class="offset_2 offset">
+  <div class="calendar_inner inner_padding" style="display: inline-block; opacity: 1; margin-top: 0px;">
+    <div id="kCalendar"><div id="header"><span id="date">09<font>월</font></span></div><table border="0" cellspacing="0" cellpadding="0"><caption>2025년 09월 달력</caption><tbody>			<tr>				<td class="sun"> </td>				<td class="mon">1</td>				<td class="tue">2</td>				<td class="wed">3</td>				<td class="thu">4</td>				<td class="fri">5</td>				<td class="sat">6</td>			</tr>			<tr>				<td class="sun">7</td>				<td class="mon">8</td>				<td class="tue"><div class="weddingday theme_1_back">9</div></td>				<td class="wed">10</td>				<td class="thu">11</td>				<td class="fri">12</td>				<td class="sat">13</td>			</tr>			<tr>				<td class="sun">14</td>				<td class="mon">15</td>				<td class="tue">16</td>				<td class="wed">17</td>				<td class="thu">18</td>				<td class="fri">19</td>				<td class="sat">20</td>			</tr>			<tr>				<td class="sun">21</td>				<td class="mon">22</td>				<td class="tue">23</td>				<td class="wed">24</td>				<td class="thu">25</td>				<td class="fri">26</td>				<td class="sat">27</td>			</tr>			<tr>				<td class="sun">28</td>				<td class="mon">29</td>				<td class="tue">30</td>				<td class="wed"> </td>				<td class="thu"> </td>				<td class="fri"> </td>				<td class="sat"> </td>			</tr>			</tbody>		</table></div>
+  </div>
+  <p class="dday_inner remain" style="display:inline-block;">
+    <span data-name="groom_name">신랑성함</span>
+    <i class="xi-heart"></i>
+    <span data-name="bride_name">신부성함</span> 의 결혼식<span id="wd_d-day">이 지났습니다</span>
+  </p>
+</div>
+
+<script>
+$(document).ready(function() {
+  kCalendar('kCalendar', '2025-09-09');
+  wdDday('2025-09-21','2025-09-09');
+});
+</script>
+                  </div>
+                <div class="album_wrap anchor_3 wrap_padding">
+                      <div class="offset_6 offset">
+                          </div>
+                  </div>
+                <div class="movie_wrap anchor_4 wrap_padding">
+                      <div class="offset_7 offset">
+              <div class="bgm_stop"></div>
+  <div class="movie_inner inner_padding" style="display: none; opacity: 1; margin-top: 0px;">
+    <p class="section_tit theme_1_color">Video</p>
+    <div class="iframe_wrap">
+      <div class="iframe_inner">
+              </div>
+    </div>
+  </div>
+
+<script>
+    $(function(){
+      var vid = document.getElementById("ivideo");
+      var bgm_1 = document.getElementById("skin_bgm");
+
+      $('.bgm_stop').click(function(){
+      $('.bgm_stop').toggleClass('play_video');
+
+      var bgm_value = $('.bgm_stop').attr('class')
+      if(bgm_value == 'bgm_stop play_video'){
+        vid.play();
+        bgm_1.pause();
+      }else{
+        vid.pause();
+        bgm_1.play();
+      }
+    })
+  })
+</script>
+            </div>
+                  </div>
+                <div class="map_wrap anchor_5 wrap_padding">
+                      <input type="hidden" id="wd_xpos" name="wd_xpos" value="126.978652258309" readonly="">
+<input type="hidden" id="wd_ypos" name="wd_ypos" value="37.566826004661" readonly="">
+<div class="offset_3 offset">
+<div class="map_inner inner_padding" style="opacity: 1; margin-top: 0px;">
+  <p class="section_tit theme_1_color">오시는 길</p>
+  <p data-name="card_hall" class="map_hall">웨딩홀</p>
+  <p data-name="card_hall_address" class="map_ad"></p>
+  <span data-name="card_hall_number" class="map_call"></span>
+    <div id="map" style="position: relative; overflow: hidden; background: url(&quot;https://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png&quot;);"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; cursor: url(&quot;https://t1.daumcdn.net/mapjsapi/images/2x/cursor/openhand.cur.ico&quot;) 7 5, url(&quot;https://t1.daumcdn.net/mapjsapi/images/2x/cursor/openhand.cur.ico&quot;), default;"><div style="position: absolute;"><div style="position: absolute; z-index: 0;"></div><div style="position: absolute; z-index: 1; left: 0px; top: 0px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3998/1781.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -83px; top: 247px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3998/1782.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 173px; top: 247px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3998/1783.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 429px; top: 247px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3999/1781.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -83px; top: -9px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3999/1782.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 173px; top: -9px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/3999/1783.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 429px; top: -9px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/4000/1781.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -83px; top: -265px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/4000/1782.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 173px; top: -265px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v13_9r77b/latest/2/4000/1783.png" alt="" draggable="false" style="position: absolute; -webkit-user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 429px; top: -265px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"></div><div style="position: absolute; z-index: 1;"></div><div style="width: 418px; height: 298px; position: absolute; z-index: 1;"></div><div style="position: absolute; z-index: 1;"><svg version="1.1" style="stroke: none; stroke-dashoffset: 0.5; stroke-linejoin: round; fill: none; transform: translateZ(0px); position: absolute; width: 2090px; height: 1490px; left: -836px; top: -596px;" viewBox="0 0 2090 1490"><defs></defs></svg></div><div style="position: absolute; z-index: 1; width: 100%; height: 0px; transform: translateZ(0px);"><div style="position: absolute; margin: -39px 0px 0px -14px; z-index: 0; left: 209px; top: 149px;"><img draggable="false" src="https://t1.daumcdn.net/mapjsapi/images/2x/marker.png" alt="" role="presentation" title="" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; -webkit-user-select: none; -webkit-user-drag: none; clip: rect(0px, 29px, 42px, 0px); top: 0px; left: 0px; width: 29px; height: 42px;"><img src="https://t1.daumcdn.net/mapjsapi/images/2x/transparent.gif" alt="" role="presentation" draggable="false" usemap="#daum.maps.Marker.Area:1" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; -webkit-user-select: none; -webkit-user-drag: none; width: 29px; height: 42px;"><map id="daum.maps.Marker.Area:1" name="daum.maps.Marker.Area:1"><area href="javascript:void(0)" alt="" role="presentation" shape="poly" coords="14,39,9,27,4,21,1,16,1,10,4,4,11,0,18,0,25,4,28,10,28,16,25,21,20,27" title=""></map></div></div></div></div><div style="position: absolute; cursor: default; z-index: 1; margin: 0px 6px; height: 19px; line-height: 14px; left: 0px; bottom: 0px; color: rgb(0, 0, 0);"><div style="color: rgb(0, 0, 0); text-align: center; font-size: 10px; float: left;"><div style="float: left; margin: 2px 3px 0px 4px; height: 6px; transition: width 0.1s ease 0s; border-width: medium 2px 2px; border-style: none solid solid; border-color: rgb(0, 0, 0); border-image: none; width: 56px;"></div><div style="float: left; margin: 0px 4px 0px 0px; font-family: AppleSDGothicNeo-Regular, 돋움, dotum, sans-serif; font-weight: bold; color: rgb(0, 0, 0);">30m</div></div><div style="margin: 0px 4px; float: left;"><a target="_blank" href="http://map.kakao.com/" style="float: left; width: 32px; height: 10px;"><img src="https://t1.daumcdn.net/mapjsapi/images/2x/m_bi_b.png" alt="Kakao 맵으로 이동(새창열림)" style="float: left; width: 32px; height: 10px; border: medium;"></a><div style="font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 11px; font-family: Arial, Tahoma, Dotum, sans-serif; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-variant-emoji: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal; float: left;"></div></div></div><div style="cursor: auto; position: absolute; z-index: 2; left: 0px; top: 0px;"></div></div>
+
+  <a href="https://map.kakao.com/link/map/,37.566826004661,126.978652258309" onclick="_blank" class="map_detail theme_1_back">지도를 자세히 보려면 여기를 눌러주세요</a>
+
+  <div class="way_guide">
+    <ul>
+      <li style="display:none" class="map_subway">
+        <div class="way_tit theme_1_color">지하철</div>
+        <div class="way_txt" data-name="map_subway">
+                  </div>
+      </li>
+      <li style="display:none" class="map_bus">
+        <div class="way_tit theme_1_color">버스</div>
+        <div class="way_txt" data-name="map_bus">
+                  </div>
+      </li>
+      <li style="display:none" class="map_etc">
+        <div class="way_tit theme_1_color">기타 교통정보</div>
+        <div class="way_txt" data-name="map_etc">
+                  </div>
+      </li>
+      <li style="display:none" class="map_after">
+        <div class="way_tit theme_1_color">추가 안내</div>
+        <div class="way_txt" data-name="map_after">
+                  </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  var map_width	= $(window).width();
+  var map_height = ($(window).width() / 100) * 70;
+
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+      mapOption = {
+          center: new kakao.maps.LatLng($('#wd_ypos').val(), $('#wd_xpos').val()), // 지도의 중심좌표
+          level: 2, // 지도의 확대 레벨
+          mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+      };
+
+  // 지도를 생성한다
+   var map = new kakao.maps.Map(mapContainer, mapOption);
+
+   // 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng($('#wd_ypos').val(), $('#wd_xpos').val());
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+   position: markerPosition,
+   draggable : true // 마커를 드래그 가능하도록 설정한다
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+});
+
+</script>
+                  </div>
+                <div class="account_wrap anchor_6 wrap_padding">
+                      <div class="offset_5 offset">
+<div class="account_inner inner_padding" style="opacity: 1; margin-top: 0px;">
+  <p class="section_tit theme_1_color">마음을 전하는 곳</p>
+
+  <div class="account_box">
+
+      <div class="groom_account account_list">
+        <p class="account_tit theme_2_back ">
+          <span>신랑측 계좌번호</span>
+          <i class="xi-angle-down-min"></i>
+        </p>
+        <div class="cover_wrap" style="display:block;">
+          <div class="groom1 account_cover" style="display:none;">
+            <div class="article1">
+              <p><span data-name="groom_account_bank"></span> <span data-name="groom_account_num"></span></p>
+              <p data-name="groom_account_depositor"></p>
+            </div>
+            <div class="article2">
+              <p id="copybtn1">복사</p>
+              <a href="" id="gr_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                              <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=1" style="display:none;" data-id="groom_card">
+                  <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+                </a>
+                          </div>
+          </div>
+          <div class="groom2 account_cover" style="display:none;">
+            <div class="article1">
+              <p><span data-name="groom_account_bank_1"></span> <span data-name="groom_account_num_1"></span></p>
+              <p data-name="groom_account_depositor_1"></p>
+            </div>
+            <div class="article2">
+              <p id="copybtn2">복사</p>
+              <a href="" id="gr_pa_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                              <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=3" style="display:none;" data-id="groom_pa_card">
+                  <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+                </a>
+                          </div>
+          </div>
+          <div class="groom3 account_cover" style="display:none;">
+            <div class="article1">
+              <p><span data-name="groom_account_bank_2"></span> <span data-name="groom_account_num_2"></span></p>
+              <p data-name="groom_account_depositor_2"></p>
+            </div>
+            <div class="article2">
+              <p id="copybtn3">복사</p>
+              <a href="" id="gr_pa2_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                              <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=4" style="display:none;" data-id="groom_pa2_card">
+                  <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+                </a>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="bride_account account_list">
+      <p class="account_tit theme_2_back ">
+        <span>신부측 계좌번호</span>
+        <i class="xi-angle-down-min"></i>
+      </p>
+      <div class="cover_wrap" style="display:block;">
+        <div class="bride1 account_cover" style="display:none;">
+          <div class="article1">
+            <p><span data-name="bride_account_bank"></span> <span data-name="bride_account_num"></span></p>
+            <p data-name="bride_account_depositor"></p>
+          </div>
+          <div class="article2">
+            <p id="copybtn4">복사</p>
+            <a href="" id="br_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                          <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=2" style="display:none;" data-id="bride_card">
+                <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+              </a>
+                      </div>
+        </div>
+        <div class="bride2 account_cover" style="display:none;">
+          <div class="article1">
+            <p><span data-name="bride_account_bank_1"></span> <span data-name="bride_account_num_1"></span></p>
+            <p data-name="bride_account_depositor_1"></p>
+          </div>
+          <div class="article2">
+            <p id="copybtn5">복사</p>
+            <a href="" id="br_pa_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                          <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=5" style="display:none;" data-id="bride_pa_card">
+                <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+              </a>
+                      </div>
+        </div>
+        <div class="bride3 account_cover" style="display:none;">
+          <div class="article1">
+            <p><span data-name="bride_account_bank_2"></span> <span data-name="bride_account_num_2"></span></p>
+            <p data-name="bride_account_depositor_2"></p>
+          </div>
+          <div class="article2">
+            <p id="copybtn6">복사</p>
+            <a href="" id="br_pa2_kakao_skin" style="display:none;" target="_blank"><i class="xi-speech"></i>pay</a>
+                          <a href="https://keyft.co.kr/pagelist?dir=heart&amp;shop=22599138&amp;idx=chanhohyeyoon&amp;tar=6" style="display:none;" data-id="bride_pa2_card">
+                <p class="pay_card"><i class="xi-credit-card"></i>CARD</p>
+              </a>
+                      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<style media="screen">
+.market_wrap.editor {position: fixed;bottom: 7%;width: 100%;z-index: 3;transform: translate(0%, -50%);}
+.market_wrap.card {position: fixed; bottom: 3%; left: 0; right:0; margin: 0 auto; width: 100%; z-index: 11;opacity:0;}
+  .market_wrap .inner {width: 65px;height: 65px;float: right;margin-right: 3%;}
+  .market_wrap a.round{padding: 0;width: 100%;height: 100%;border-radius: 100%;display: flex;align-items: center;justify-content: center;box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);transition: 0.5s;}
+  .market_wrap a.round .text_flower{display: none;}
+  .market_wrap a.round img {display: inline-block;width: 80%;}
+
+  .flower_pop_back{position: fixed;bottom: 0;max-width: 420px;text-align: center;width: 100%;height: 100%;z-index: 999999999999999;background-color: rgba(0, 0, 0, 0.5);}
+  .flower_pop_back .flower_pop_txt{position: absolute;bottom: 0;left: 0;width: 100%;padding: 10% 0;background-color: #efefef;border-radius: 30px 30px 0 0;}
+  .flower_pop_back .flower_pop_txt .fpopTitle{color: #292929;font-size: 1.1rem !important;margin-bottom: 7%;}
+  .flower_pop_back .flower_pop_txt .fpopTxt{color: #828282;line-height: 20px;font-size: 1rem !important;margin-bottom: 7%;}
+  .flower_pop_back .flower_pop_txt .fpopInfo{color: #828282;line-height: 20px;font-size: 0.9rem !important;margin-bottom: 7%;}
+  .flower_pop_back .flower_pop_txt .fpopBtn{width: 70%;display: inline-block;margin: 0 auto;}
+  .flower_pop_back .flower_pop_txt .fpopBtn li{display: inline-block;float: left;text-align: center;padding: 10px 0px;border-radius: 5px;border: 1px solid #bebebe;}
+  .flower_pop_back .flower_pop_txt .fpopBtn a:nth-child(1) li{width: 60%;float: left;color: #fff !important;background: #626262;}
+  .flower_pop_back .flower_pop_txt .fpopBtn a:nth-child(2) li{width: 35%;float: right;}
+
+
+
+
+/* .market_wrap.static a .text_flower .title_flower{ font-size: 16px !important; margin-bottom: 8px;}
+.market_wrap a .text_flower .title_flower font{color: #36c5d0 !important;
+  margin-right: 5px;
+  font-size: 1.1rem !important;}
+.market_wrap.static a .text_flower { text-align: left}
+.market_wrap.static a img {display: inline-block; width: 60px;}
+
+.market_wrap.static a .text_flower .sub_flower{ color: #999 !important; font-size: 14px !important;display: block;}
+
+#promise .market_wrap a {background: #fff !important;}
+
+.market_wrap.static {position: static; transform: inherit; width: 100%; z-index: 3; opacity: 1!important; margin-bottom: 40px;}
+.market_wrap.static a {display: flex; width: 100%; margin:0 auto; background: #f9f9f9; border-radius: 0; padding:25px; justify-content: space-between;border-radius:8px;border:0;box-shadow: none;} */
+</style>
+<div class="market_wrap card " style="max-width: 420px; opacity: 0; bottom: -100px; transition: all 1s ease 0s;">
+  <div class="inner" id="market_view">
+            <a href="javascript:void(0);" onclick="flowerPop()" class="flower_btn theme_2_back theme_1_border round">
+        <img src="/card/skin/img/flower_stand.svg" alt="">
+      </a>
+        </div>
+</div>
+  <div class="flower_pop_back" id="flower_pop" style="display:none;">
+    <div class="flower_pop_txt">
+      <p class="fpopTitle">축하 화환 안내</p>
+      <p class="fpopTxt">신랑신부님의 행복한 날,<br>마음을 더한 화환을 선물해보세요.</p>
+      <p class="fpopInfo">
+        <i class="xi-heart"></i>신랑 신랑성함님과 신부 신부성함님의 결혼식은<br>
+        <i class="xi-calendar"></i>2025년 09월 09일 PM 01시 <font class="minNull">00분</font><br>
+        <i class="xi-maker"></i>웨딩홀에서 진행됩니다.
+      </p>
+      <ul class="fpopBtn">
+        <a href="javascript:flower_c('chanhohyeyoon','44087');" class="theme_2_back" style="">
+          <li>축하 화환 보내기</li>
+        </a>
+        <a href="javascript:void(0)" onclick="flowerPopclose();">
+          <li>닫기</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+<script>
+var maxw = $( ".all_wrap" ).width();
+$('.market_wrap').css('max-width',maxw);
+  $(window).on("wheel", function (event){
+  if (event.originalEvent.deltaY < 0) {
+    $('.market_wrap.editor').css({"opacity":"0","bottom":"-100px","transition":"1s"});
+    $('.market_wrap.card').css({"opacity":"0","bottom":"-100px","transition":"1s"});
+  } else {
+    $('.market_wrap.editor').css({"opacity":"1","bottom":"7%","transition":"1s"});
+    $('.market_wrap.card').css({"opacity":"1","bottom":"3%","transition":"1s"});
+  }
+});
+
+
+//모바일스크롤이벤트
+var lastScrollTop = 0;
+var delta = 5;
+var fixBox = document.querySelector('.market_wrap');
+var fixBoxHeight = fixBox.offsetHeight;
+var didScroll;
+//스크롤 이벤트
+window.onscroll = function(e) {
+    didScroll = true;
+};
+
+setInterval(function(){
+    if(didScroll){
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled(){
+  var nowScrollTop = window.scrollY;
+  if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
+    return;
+  }
+
+  if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
+    $('.market_wrap.editor').css({"opacity":"1","bottom":"7%","transition":"0.5s"});
+    $('.market_wrap.card').css({"opacity":"1","bottom":"3%","transition":"0.5s"});
+  }else{
+    if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
+      $('.market_wrap.editor').css({"opacity":"0","bottom":"-100px"});
+      $('.market_wrap.card').css({"opacity":"0","bottom":"-100px"});
+    }
+  }
+  lastScrollTop = nowScrollTop;
+}
+
+function flowerPop(){
+  $('#flower_pop').show();
+  }
+
+function flowerPopclose(){
+  $('#flower_pop').hide();
+}
+</script>
+</div>
+                  </div>
+                <div class="guest_book_wrap anchor_7 wrap_padding">
+                                    <input type="hidden" name="" id="del_no" value="">
+<div class="offset_8 offset">
+  <div class="guest_book_inner inner_padding" data-type="guest_book1" style="opacity: 1; margin-top: 0px;">
+    <p class="section_tit theme_1_color">방명록</p>
+    <div class="book_box">
+      <p class="nothing_book" style="display:block;">
+        <i class="xi-paper-o"></i>
+        아직 작성된 방명록이 없습니다.
+      </p>
+            <div class="book_btn">
+        <a href="javascript:void(0);" class="book_open theme_1_back"><i class="xi-bars"></i> 전체보기</a>
+        <a href="javascript:void(0);" class="write_open theme_1_back"><i class="xi-pen"></i> 작성하기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 방명록 전체보기 -->
+  <div class="guest_black black_back"></div>
+  <div class="guest_book_pop full pop_front">
+    <div class="book_wrap">
+      <p class="book_title theme_1_back">방명록 <i class="xi-close-thin book_pop_close"></i></p>
+          </div>
+  </div>
+
+  <!-- 방명록 삭제하기 -->
+  <div class="del_black black_back"></div>
+  <div class="del_wrap pop_front">
+    <i class="xi-error"></i>
+    <p>방명록을 <span class="em">삭제</span>하시겠습니까?</p>
+    <input type="password" name="" value="" placeholder="비밀번호를 입력해주세요" id="del_password">
+    <div class="del_btn">
+      <span class="cancel">취소</span>
+      <span class="check" onclick="guest_book_del('chanhohyeyoon');">확인</span>
+    </div>
+  </div>
+
+  <!-- 방명록 작성하기 -->
+  <div class="write_black black_back"></div>
+  <div class="write_wrap pop_front">
+    <i class="xi-close-thin write_close"></i>
+    <p class="write_tit">방명록 작성하기</p>
+    <span class="write_sub">방명록을 작성해주세요!</span>
+    <input type="text" name="" value="" placeholder="성함을 입력해주세요." id="write_name">
+    <textarea id="write_txt" rows="4" placeholder="내용을 입력해주세요 (비방, 욕설, 정치적성향의 글은 임의로 삭제되며 형사처벌의 대상이 될 수 있습니다.)" style="resize: none;"></textarea>
+    <span class="write_btn" onclick="guest_book_write('chanhohyeyoon');">작성하기</span>
+  </div>
+</div>
+
+<script>
+  $(function(){
+    $('.book_open').click(function() {
+      $('.guest_book_pop').show();
+      $('.guest_black').show();
+    });
+    $('.book_pop_close').click(function() {
+      $('.guest_book_pop').hide();
+      $('.guest_black').hide();
+    });
+    $('.guest_black').click(function() {
+      $('.guest_book_pop').hide();
+      $('.guest_black').hide();
+    });
+
+
+    // 방명록 삭제 취소버튼
+    $('.del_wrap .cancel').click(function() {
+      $('.del_black').hide();
+      $('.del_wrap').hide();
+    });
+    $('.del_black').click(function() {
+      $('.del_wrap').hide();
+      $('.del_black').hide();
+    });
+
+    // 방명록 작성하기
+    $('.write_open').click(function() {
+      $('.write_black').show();
+      $('.write_wrap').show();
+      $('#write_name').val('');
+      $('#write_txt').val('');
+    });
+
+    $('.write_black').click(function() {
+      $('.write_black').hide();
+      $('.write_wrap').hide();
+    });
+
+    $('.write_close').click(function() {
+      $('.write_black').hide();
+      $('.write_wrap').hide();
+    });
+  });
+
+  // 방명록 삭제 클릭시
+  function book_del_ac(i) {
+    $('.del_black').show();
+    $('.del_wrap').show();
+    $('#del_no').val(i);
+  }
+
+  </script>
+                              </div>
+                <div class="attend_wrap anchor_8 wrap_padding">
+                      <div class="offset_9 offset">
+  <div class="attend_inner inner_padding" style="display: none; opacity: 1; margin-top: 0px;">
+    <p class="section_tit theme_1_color">참석 여부</p>
+    <span class="sub_tit">결혼식 참석 여부를 체크해주세요</span>
+    <p class="check_attend theme_2_back"><i class="xi-check-circle"></i> 참석 여부 체크하기</p>
+  </div>
+
+  <!-- 참석여부 체크 상세 -->
+  <div class="attend_black black_back"></div>
+    <div class="attend_pop_wrap pop_front full">
+      <div class="attend_article">
+        <div class="attend_tit">
+          <p><i class="xi-close-thin attend_close"></i></p>
+          <p>참석여부</p>
+          <span>참석여부를 체크해주세요!</span>
+        </div>
+
+        <div class="attend_check_wrap">
+          <div class="groom_bride_box gb_box1">
+            <span>
+              <input type="radio" name="check_groom_bride" id="check_groom_bride1" value="G" checked="">
+              <label for="check_groom_bride1">
+                <i class="xi-heart"></i> 신랑측 <i class="xi-heart-o"></i>
+              </label>
+            </span>
+            <span>
+              <input type="radio" name="check_groom_bride" id="check_groom_bride2" value="B">
+              <label for="check_groom_bride2">
+                <i class="xi-heart"></i> 신부측 <i class="xi-heart-o"></i>
+              </label>
+            </span>
+          </div>
+          <div class="groom_bride_box">
+            <ul>
+              <li>
+                <div class="left">참석여부</div>
+                <div class="right">
+                  <span>
+                    <input type="radio" name="attend_check" id="attend_check1" value="T" checked="">
+                    <label for="attend_check1">
+                      <i class="xi-check-circle"></i> 참석<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                  <span>
+                    <input type="radio" name="attend_check" id="attend_check2" value="F">
+                    <label for="attend_check2">
+                      <i class="xi-check-circle"></i> 불참석<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="left">성함</div>
+                <div class="right">
+                  <input type="text" id="attend_name" name="" value="" maxlength="20">
+                </div>
+              </li>
+              <li>
+                <div class="left">전화번호</div>
+                <div class="right attend_call">
+                  <input type="text" id="sign-mobile1" maxlength="3" class="form-control">
+                  <span>-</span>
+                  <input type="text" id="sign-mobile2" maxlength="4" class="form-control">
+                  <span>-</span>
+                  <input type="text" id="sign-mobile3" maxlength="4" class="form-control">
+                </div>
+              </li>
+              <li>
+                <div class="left">식사예정</div>
+                <div class="right">
+                  <span>
+                    <input type="radio" name="attend_food" id="attend_food1" value="T" checked="">
+                    <label for="attend_food1">
+                      <i class="xi-check-circle"></i> 예정<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                  <span>
+                    <input type="radio" name="attend_food" id="attend_food2" value="F">
+                    <label for="attend_food2">
+                      <i class="xi-check-circle"></i> 미예정<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="left">본인포함 총</div>
+                <div class="right">
+                  <input type="text" class="attend_group" id="attend_group" name="" value="" maxlength="20"> 명
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="groom_bride_box">
+            <ul>
+              <li>
+                <div class="left">청첩장수령</div>
+                <div class="right">
+                  <span>
+                    <input type="radio" name="invite_check" id="invite_check1" value="T" checked>
+                    <label for="invite_check1">
+                      <i class="xi-check-circle"></i> 수령<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                  <span>
+                    <input type="radio" name="invite_check" id="invite_check2" value="F">
+                    <label for="invite_check2">
+                      <i class="xi-check-circle"></i> 미수령<i class="xi-check-circle-o"></i>
+                    </label>
+                  </span>
+                </div>
+              </li>
+              <li class="delivery_box">
+                <div class="left">주소</div>
+                <div class="right">
+                  <input type="text" id="delivery_addr1" maxlength="20" placeholder="우편번호" readonly="">
+                  <div id="btn_address">주소찾기</div>
+                  <input type="text" id="delivery_addr2" maxlength="20" placeholder="청첩장 받아보실 주소">
+                  <input type="text" id="delivery_addr3" maxlength="20" placeholder="상세주소">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="groom_bride_box">
+            <div class="agree">
+              <p>개인정보 수집 및 이용동의(필수)</p>
+              <span>
+                참석여부 전달을 위한 개인정보 수집 및 이용에 동의해주세요.<br>
+                (성함, 연락처, 청첩장 수령시 주소)<br>
+                개인정보는 청첩장 이용 종료시까지 수집되며, 이후에는 삭제됩니다.
+              </span>
+              <div class="check_wrap">
+                <input type="checkbox" name="own_agree" value="" id="own_agree">
+                <label for="own_agree" class="own_check"><i class="xi-check-min"></i></label>
+                <label for="own_agree" class="own_txt">동의합니다.</label>
+              </div>
+            </div>
+          </div> -->
+
+          <span id="attend_sign" onclick="sign_check('chanhohyeyoon');">참석여부 등록하기</span>
+        </div>
+      </div>
+    </div>
+
+</div>
+                  </div>
+                <div class="share_wrap anchor_9 wrap_padding">
+                      <div class="offset_10 offset">
+  <div class="share_inner inner_padding" style="opacity: 1; margin-top: 0px;">
+          <span class="kakao_btn">
+        <i class="xi-speech"></i> <font onclick="alert('예식장 주소 입력한 후 이용가능합니다.')">카카오톡으로 공유하기</font>
+      </span>
+        <span class="url_btn">
+      <img src="/card/skin/img/url.svg" alt=""> <font>청첩장 주소 복사하기</font>
+    </span>
+  </div>
+</div>
+                  </div>
+        
+
+        <div class="skin_footer">
+  <img src="/card/skin/img/copyright.svg" alt="하단로고">
+</div>
+      </div>
+    </div>
+
+    </div></div>
       <!--  -->
 
 <script>
