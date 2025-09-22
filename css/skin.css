@@ -1,0 +1,57 @@
+#wedding {text-align: center;}
+#wedding .section_tit {color: #141c2f;}
+
+/* 메인 */
+#wedding .main {position: relative;}
+#wedding .main img {width: 100%; display: block;}
+#wedding .main .moving {/*background-image: url(/card/skin/fall_in_love/img/moving2.gif);*/ background-size: cover; background-repeat: no-repeat; height: 100%; position: absolute; top: 0; width: 100%;}
+#wedding .main_img_wrap {position: relative;}
+/* #wedding .main_img_wrap .hand {position: absolute; bottom: 0; right: 10px; width: 270px; transform: rotate(-5deg);} */
+#wedding .main_img_wrap .gradient {position: absolute; bottom: 0; left: 0; right: 0; background-image: url(/card/skin/wedding_day/img/white_front.png); width: 100%; height: 165px;}
+#wedding .main .main_txt {padding: 40px 0;}
+#wedding .main .main_txt span {font-size: 1.125rem;}
+#wedding .main .main_txt font {font-size: 0.875rem;}
+#wedding .main .main_txt p {display: inline-block; border-bottom: 1px solid #888; padding-bottom: 10px;}
+#wedding .main .bottom_txt {line-height: 20px;}
+
+/* 인사말 */
+#wedding .greeting_inner img {width: 25px;}
+#wedding .greeting_inner span {margin-bottom: 20px; display: inline-block; width: 100%;}
+#wedding .greeting_inner {padding: 40px 16%; line-height: 30px;}
+
+/* 전화 */
+#wedding .call_wrap .call_box_btn p {background-color: #141c2f; color: #fff;}
+#wedding .call_pop_down > p {background-color: #141c2f; color: #fff;}
+#wedding .call_pop_down > p span {color: #fff;}
+
+/* 달력 */
+#wedding .calendar_inner #kCalendar {padding: 0 16%;}
+#wedding #kCalendar .weddingday {background-color: #141c2f;}
+#wedding .remain i {color: #ff4e7f; vertical-align: bottom;}
+
+/* 지도 */
+#wedding .map_inner .map_detail {background-color: #141c2f; color: #fff;}
+#fall .map_inner .way_guide .way_tit {color: #141c2f;}
+
+/* 계좌 */
+/* #wedding .account_wrap {background-color: #f2f4f7;} */
+#wedding .account_box .account_tit {background-color: #f2f4f7;}
+
+/* 방명록 */
+#wedding .book_box .book_inner {border: 1px solid #ddd; border-radius: 0;}
+#wedding .book_btn a {background-color: #141c2f; color: #fff; border-radius: 0;}
+
+/* 방명록 상세 */
+#wedding .book_wrap .book_title {background-color: #141c2f; color: #fff;}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image: url(/card/skin/img/left.svg);}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image: url(/card/skin/img/right.svg);}
+.swiper-button-next, .swiper-button-prev {background-size: 15px;}
+.swiper-button-next:after, .swiper-button-prev:after {opacity: 0;}
+
+
+/* 참석여부 */
+#wedding .attend_inner .check_attend {background-color: #f2f4f7; border-radius: 0;}
+
+.offset_7{position: relative;}
+.bgm_stop{position: absolute; top: 80px; width: 30%; height: 25%; z-index: 999; transform: translate(120%,70%);}
