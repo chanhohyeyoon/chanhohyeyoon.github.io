@@ -94,7 +94,7 @@ body.splash-active {
   <div class="overlay-div"></div>
   <img class="img_02" src="/card/img/img1.JPG"/>
   <img class="img_01" src="/card/img/img2.JPG" style="opacity: 0"/>
-  <div class="text">결혼합니다</div>
+  <div class="text">모청 테스트</div>
 </div>
 
   <div id="invite_wrap">
@@ -220,7 +220,7 @@ else {
               <source id="moving_video" src="/card/movie/snow2.mp4">
             </video>
           
-                      <img src="/card/skin/d_img/main2.png" alt="" id="skin_main_img" oncontextmenu="return false" style="-webkit-touch-callout:none">
+                      <img src="/card/img/img3.png" alt="" id="skin_main_img" oncontextmenu="return false" style="-webkit-touch-callout:none">
                     <div class="gradient"></div>
         </div>
         <div class="main_txt">
@@ -1006,6 +1006,7 @@ function flowerPopclose(){
     const img2 = document.querySelector('.img_02');
     const overlay = document.querySelector('.overlay-div');
     const text = document.querySelector('.text');
+  const splash = document.querySelector('.splash'); // splash 요소 선택
 
     document.body.classList.add("splash-active");
 
@@ -1018,19 +1019,24 @@ function flowerPopclose(){
     setTimeout(() => {
       img1.style.opacity = 1;
       img2.style.opacity = 0;
-    }, 1500);
+    }, 1000);
 
     // Step 3: 텍스트 나타나기
 setTimeout(() => {
   text.classList.add('show');
-}, 2500); 
+}, 2000); 
 
-setTimeout(() => {
-    splash.style.display = "none";
-        document.body.classList.remove("splash-active");
+  // Step 4: 스플래시 자연스럽게 사라지기
+  setTimeout(() => {
+    splash.style.transition = "opacity 1s ease"; // 1초 동안 자연스럽게
+    splash.style.opacity = 0;
 
-  }, 4000); 
-    
+    // opacity transition 끝난 후 display:none
+    splash.addEventListener('transitionend', () => {
+      splash.style.display = "none";
+      document.body.classList.remove("splash-active");
+    }, { once: true }); // 한 번만 실행
+  }, 4000);    
     
   });
 </script>
