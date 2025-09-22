@@ -38,11 +38,15 @@
       background: #f9f9f9;
     }
 
-    #splash {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-    }
+#splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #fff; /* 필요시 배경색 */
+  opacity: 1;
+  transition: opacity 1s ease; /* fade out 효과 */
+  z-index: 9999;
+}
 
     .overlay-div {
       position: absolute;
