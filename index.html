@@ -1010,7 +1010,7 @@ function flowerPopclose(){
     const img2 = document.querySelector('.img_02');
     const overlay = document.querySelector('.overlay-div');
     const text = document.querySelector('.text');
-  const splash = document.querySelector('.splash'); // splash 요소 선택
+  const splash = document.getElementById('splash');
 
     document.body.classList.add("splash-active");
 
@@ -1031,16 +1031,13 @@ setTimeout(() => {
 }, 2000); 
 
   // Step 4: 스플래시 자연스럽게 사라지기
-  setTimeout(() => {
-    splash.style.transition = "opacity 1s ease"; // 1초 동안 자연스럽게
-    splash.style.opacity = 0;
-
-    // opacity transition 끝난 후 display:none
+ setTimeout(() => {
+    splash.style.opacity = 0; // CSS transition 적용됨
     splash.addEventListener('transitionend', () => {
       splash.style.display = "none";
       document.body.classList.remove("splash-active");
-    }, { once: true }); // 한 번만 실행
-  }, 4000);    
+    }, { once: true });
+  }, 4000);
     
   });
 </script>
