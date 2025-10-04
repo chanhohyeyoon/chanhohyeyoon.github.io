@@ -694,8 +694,8 @@ function kCalendar(id, date) {
 
 
 
-function wdDday( w) {
-  var dat1 = new Date();
+function wdDday(t, w) {
+  var dat1 = new Date(t);
   var dat2 = new Date(w);
   var diff = dat2 - dat1;
   var currDay = 24 * 60 * 60 * 1000; // 시 * 분 * 초 * 밀리세컨
@@ -770,4 +770,5 @@ function flower_c(uid,idx){
     }
   });
 }
+
 
