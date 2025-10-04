@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="/card/swiper/swiper.min.css">
 <link rel="stylesheet" href="/card/swiper/swiper-bundle.min.css">
 <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="//t1.daumcdn.net/postcode/api/core/250808/1754629267987/250808.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
 
 
   <style>
@@ -96,6 +97,8 @@ body.splash-active {
 
 <div id="splash">
   <div class="overlay-div"></div>
+  <div id="lottie-loader"></div>
+
   <img class="img_02" src="/card/img/img1.JPG"/>
   <img class="img_01" src="/card/img/img2.JPG" style="opacity: 0"/>
   <div class="text">Wedding Day</div>
@@ -1011,10 +1014,20 @@ function flowerPopclose(){
     const img2 = document.querySelector('.img_02');
     const overlay = document.querySelector('.overlay-div');
     const text = document.querySelector('.text');
-  const splash = document.getElementById('splash');
+   const splash = document.getElementById('splash');
+    const animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'css/v2.json' // JSON 애니메이션 파일 경로
+    });
 
+    
     document.body.classList.add("splash-active");
 
+
+    
     // Step 1: 이미지1 표시 + 오버레이
     setTimeout(() => {
       overlay.style.opacity = 1;
@@ -1027,15 +1040,16 @@ function flowerPopclose(){
     }, 1000);
 
     // Step 3: 텍스트 나타나기
-setTimeout(() => {
-  text.classList.add('show');
-}, 2000); 
+// setTimeout(() => {
+//   text.classList.add('show');
+// }, 2000); 
 
   // Step 4: 스플래시 자연스럽게 사라지기
  setTimeout(() => {
     splash.style.opacity = 0; // CSS transition 적용됨
     splash.addEventListener('transitionend', () => {
       splash.style.display = "none";
+      document.getElementById('lottie-loader').style.display = 'none';
       document.body.classList.remove("splash-active");
     }, { once: true });
   }, 4000);
