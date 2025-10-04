@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모바일 청첩장</title>
+  <style>
+    #lottie-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #main-content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 로딩 애니메이션 컨테이너 -->
+  <div id="lottie-loader"></div>
+
+  <!-- 실제 내용 -->
+  <div id="main-content">
+    <h1>우리 결혼해요!</h1>
+    <p>날짜: 2025년 11월 15일</p>
+    <!-- 나머지 청첩장 내용 -->
+  </div>
+
+  <!-- Lottie 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+
+  <script>
+    // Lottie 애니메이션 로드
+    const animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'css/v2.json' // JSON 애니메이션 파일 경로
+    });
+
+    // 일정 시간 후 로딩화면 숨기고 본문 보이기
+    setTimeout(() => {
+      document.getElementById('lottie-loader').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 3000); // 3초 후 콘텐츠 표시 (원하는 시간 조절 가능)
+  </script>
+
+</body>
+</html>
