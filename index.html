@@ -1045,22 +1045,31 @@ function flowerPopclose(){
     const text = document.querySelector('.text');
    const splash = document.getElementById('splash');
 
-    document.fonts.load('1em "Cinzel"').then(() => {
-      const animation = lottie.loadAnimation({
-        container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
-        renderer: 'svg',
-        loop: true,
-        autoplay: true, // 폰트 로딩 후 자동 재생
-        path: 'css/v2_cinzel_fixed.json' // JSON 애니메이션 파일 경로
-      });
-    }).catch((err) => {
-      console.error('폰트 로딩 실패:', err);
+  const animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-loader'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false, // 폰트 적용 후 재생
+      path: 'css/v2_cinzel_fixed.json'
     });
-
-    
     document.body.classList.add("splash-active");
 
 
+    animation.addEventListener('DOMLoaded', () => {
+      const allTexts = document.querySelectorAll('#lottie-loader text');
+      allTexts.forEach(txt => {
+        txt.setAttribute('font-family', 'Cinzel'); // 원하는 폰트로 강제
+      });
+
+      // 폰트가 완전히 로드된 후 재생
+      document.fonts.load('1em "Cinzel"').then(() => {
+        animation.play();
+      }).catch(err => {
+        console.error('폰트 로딩 실패:', err);
+        animation.play(); // 폰트 실패해도 재생
+      });
+    });
+    
     
     // Step 1: 이미지1 표시 + 오버레이
     setTimeout(() => {
@@ -1089,6 +1098,7 @@ function flowerPopclose(){
   }, 4000);
     
   });
+
 </script>
 
 </body>
