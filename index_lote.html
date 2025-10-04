@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>모바일 청첩장</title>
+
+    <meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+  
+  <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-4D1RLZ2MXV&amp;cx=c&amp;gtm=4e59a1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WF727LPL"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WF727LPL');</script>
+  <!-- End Google Tag Manager -->
+
+<link href="/skin/css/font_pre.css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
+<!-- <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script> -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bab62872fb491fcb6aa58caca2f4f9e8"></script><script charset="UTF-8" src="https://t1.daumcdn.net/mapjsapi/js/main/4.4.19/kakao.js"></script>
+<link href="/css/common.css" rel="stylesheet">
+<link href="/skin/css/skin_common.css" rel="stylesheet">
+<script src="/card/swiper/swiper.min.js"></script>
+<link rel="stylesheet" href="/card/swiper/swiper.min.css">
+<link rel="stylesheet" href="/card/swiper/swiper-bundle.min.css">
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="//t1.daumcdn.net/postcode/api/core/250808/1754629267987/250808.js"></script>
+
+  
+  <style>
+    #lottie-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #111; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #main-content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 로딩 애니메이션 컨테이너 -->
+  <div id="lottie-loader"></div>
+
+  <!-- 실제 내용 -->
+  <div id="main-content">
+    <h1>우리 결혼해요!</h1>
+    <p>날짜: 2025년 11월 15일</p>
+    <!-- 나머지 청첩장 내용 -->
+  </div>
+
+  <!-- Lottie 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+
+  <script>
+    // Lottie 애니메이션 로드
+    const animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'css/v2.json' // JSON 애니메이션 파일 경로
+    });
+
+    // 일정 시간 후 로딩화면 숨기고 본문 보이기
+    setTimeout(() => {
+      document.getElementById('lottie-loader').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 5000); // 3초 후 콘텐츠 표시 (원하는 시간 조절 가능)
+  </script>
+
+</body>
+</html>
