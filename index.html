@@ -1044,12 +1044,17 @@ function flowerPopclose(){
     const overlay = document.querySelector('.overlay-div');
     const text = document.querySelector('.text');
    const splash = document.getElementById('splash');
-    const animation = lottie.loadAnimation({
-      container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'css/v2_cinzel_fixed.json' // JSON 애니메이션 파일 경로
+
+    document.fonts.load('1em "Cinzel"').then(() => {
+      const animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-loader'), // 애니메이션이 들어갈 DOM
+        renderer: 'svg',
+        loop: true,
+        autoplay: true, // 폰트 로딩 후 자동 재생
+        path: 'css/v2_cinzel_fixed.json' // JSON 애니메이션 파일 경로
+      });
+    }).catch((err) => {
+      console.error('폰트 로딩 실패:', err);
     });
 
     
