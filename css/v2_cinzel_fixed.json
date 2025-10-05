@@ -1292,7 +1292,8 @@
         "fName": "Cinzel",
         "fFamily": "Cinzel",
         "fStyle": "normal",
-        "ascent": 70.9991455078125
+      "fPath": "https://fonts.googleapis.com/css2?family=Cinzel&display=swap",
+      "origin": 1
       }
     ]
   },
