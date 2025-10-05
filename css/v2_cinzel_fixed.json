@@ -263,8 +263,8 @@
           "ddd": 0,
           "ind": 2,
           "ty": 5,
-          "nm": "#1-LOVE",
-          "ln": "1-LOVE",
+          "nm": "#1-BETTER",
+          "ln": "1-BETTER",
           "sr": 1,
           "ks": {
             "o": {
@@ -344,7 +344,7 @@
                   "s": {
                     "s": 180,
                     "f": "Cinzel",
-                    "t": "LOVE",
+                    "t": "BETTER",
                     "j": 0,
                     "tr": 0,
                     "lh": 216,
@@ -501,8 +501,8 @@
           "ddd": 0,
           "ind": 4,
           "ty": 5,
-          "nm": "#1-LIFE",
-          "ln": "1-LIFE",
+          "nm": "#1-TOGETHER",
+          "ln": "1-TOGETHER",
           "sr": 1,
           "ks": {
             "o": {
@@ -582,7 +582,7 @@
                   "s": {
                     "s": 180,
                     "f": "Cinzel",
-                    "t": "LIFE",
+                    "t": "TOGETHER",
                     "j": 2,
                     "tr": 0,
                     "lh": 216,
@@ -1302,7 +1302,7 @@
       "ddd": 0,
       "ind": 1,
       "ty": 0,
-      "nm": "LOVE OF LIFE",
+      "nm": "BETTER TOGETHER",
       "refId": "comp_0",
       "sr": 1,
       "ks": {
