@@ -1291,7 +1291,7 @@
       {
         "fName": "Cinzel",
         "fFamily": "Cinzel",
-        "fStyle": "Regular",
+        "fStyle": "normal",
         "ascent": 70.9991455078125
       }
     ]
@@ -3689,7 +3689,7 @@
     {
       "ch": "B",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 59.3,
       "data": {
         "shapes": [
@@ -4070,12 +4070,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "L",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 54.1,
       "data": {
         "shapes": [
@@ -4306,12 +4306,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "E",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 57,
       "data": {
         "shapes": [
@@ -4686,12 +4686,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "S",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 48,
       "data": {
         "shapes": [
@@ -4934,12 +4934,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "I",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 34.7,
       "data": {
         "shapes": [
@@ -5122,12 +5122,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "N",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 74.3,
       "data": {
         "shapes": [
@@ -5490,12 +5490,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "G",
       "size": 230,
-      "style": "Medium",
+      "style": "normal",
       "w": 71.7,
       "data": {
         "shapes": [
@@ -5762,12 +5762,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "F",
       "size": 180,
-      "style": "Medium",
+      "style": "normal",
       "w": 53.3,
       "data": {
         "shapes": [
@@ -6094,12 +6094,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "O",
       "size": 180,
-      "style": "Medium",
+      "style": "normal",
       "w": 76.8,
       "data": {
         "shapes": [
@@ -6255,12 +6255,12 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     },
     {
       "ch": "V",
       "size": 180,
-      "style": "Medium",
+      "style": "normal",
       "w": 70.5,
       "data": {
         "shapes": [
@@ -6491,7 +6491,7 @@
           }
         ]
       },
-      "fFamily": "Minion Pro"
+      "fFamily": "Cinzel"
     }
   ]
 }
